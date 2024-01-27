@@ -1,9 +1,9 @@
-// import Image from 'next/image'
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="h1-bold">Next.js13 we are coming</h1>
+    <div className="h-screen">
+      <UserButton afterSignOutUrl="/" />
     </div>
   );
 }
